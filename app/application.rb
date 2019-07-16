@@ -18,7 +18,7 @@ class Application
       if @@cart.empty?
         resp.write "Your cart is empty"
       else 
-        resp.write "#{@@cart.strip.to_s}"
+        resp.write "#{@@cart.to_s.strip}"
       end
     else
       resp.write "Path Not Found"
